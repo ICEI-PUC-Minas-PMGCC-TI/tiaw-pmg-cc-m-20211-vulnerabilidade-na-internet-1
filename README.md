@@ -1,18 +1,20 @@
-# Nome do projeto
+# BLUM3D
 
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+Projeto realizado para aumentar a segurança na internet fortalecendo a barreira entre o usuário e serviços, tendo foco em deixar senhas mais seguras.
 
 ## Alunos integrantes da equipe
 
 * Breno Lopes do Carmo
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Daniel Pedrosa Collina
+* Gabriel Svizzero Marinho
+* João Paulo De Assis Ferreira Monteiro
+* Leonardo De Oliveira Carvalho
+* Matheus Magalhães Keler
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel Vieira Carneiro
+* Ilo Amy Saldanha Rivero
 
 ## Instruções de utilização
 
