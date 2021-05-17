@@ -1,0 +1,107 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:  0 auto;
+    background-color:  gray;
+    border-radius:  10px;
+    max-width: 948px;
+    max-height: 615px;
+    margin-top: 70px;   
+}
+
+/*LADO ESQUERDO!!*/
+.lado-esquerdo .form{
+    margin-top: 86px;
+}
+
+.lado-esquerdo{
+    padding: 40px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.lado-esquerdo h2{
+    margin-top: 40px;
+    color:  white;
+}
+.form-label{
+    color: white;
+}
+.lado-esquerdo #inputEmail4{
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    width: 27vw;
+    margin-bottom: 40px;
+    
+    
+}
+
+.lado-esquerdo #inputPassword4{
+    width: 100%;
+    background-color: gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    width: 27vw;
+    margin-bottom: 15px;
+}
+
+.lado-esquerdo button{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    margin-left: 40px;
+}
+
+
+.lado-esquerdo a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-left: 125px;
+    margin-bottom: 10px;
+}
+
+#entrar{
+    margin-bottom: 10px;
+}
+
+.lado-esquerdo a:hover{
+    color: black;
+    
+}
+
+/*LADO DIRETO!!*/
+#carouselExampleDark img{
+   height: 571px;
+    width: 75vw;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#carouselExampleDark p{
+    color: white;
+}
+#carouselExampleDark h5{
+    color: white;
+}
+
+#carouselExampleDark button.active{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#carouselExampleDark button{
+    background-color: gray;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left:20px;
+}
