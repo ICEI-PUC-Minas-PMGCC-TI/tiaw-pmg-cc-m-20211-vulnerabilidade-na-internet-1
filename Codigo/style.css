@@ -41,7 +41,10 @@ img{
     margin: 10px;
 }
 /* Noticias */
-
+.grid1 .noticia1 a{
+    text-decoration: none;
+    color: black;
+}
 .grid1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
