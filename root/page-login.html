@@ -26,6 +26,14 @@
             };
         };
     </script>
+    <script>
+        function mudarHomePage() {
+            setTimeout(function() {
+                window.location = "https://icei-puc-minas-pmgcc-ti.github.io/tiaw-pmg-cc-m-20211-vulnerabilidade-na-internet-1/index.html";
+            } , 5000);
+            
+        }
+    </script>
 
 </head>
 
@@ -46,7 +54,7 @@
                     <label for="inputPassword4" class="form-label">Password</label>
                     <input type="password" class="form-control" id="inputPassword4">
                 </div>
-                <button id="entrar">ENTRAR</button>
+                <button id="entrar" onclick="mudarHomePage()">ENTRAR</button>
                 <button id="criar">CRIAR CONTA</button><br><br>
                 <a href="">Esqueceu sua senha?</a>
                 </form>
