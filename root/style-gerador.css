@@ -1,0 +1,109 @@
+/*INICIO BANNER*/
+.banner{
+    background-color: gray;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.banner .logo{
+    position: unset;
+    
+    
+}
+
+.banner p{
+    text-align: center;
+    max-width: 70vw;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.banner hr{
+    border: 6px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+    border-color: black;
+    max-width: 100px;
+    height: 3px;
+    margin-bottom: 5px;
+}
+.banner h3{
+    text-align: center;
+    max-width: 70vw;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    
+}
+/*FINAL BANNER*/
+/* Rodapé */
+footer{
+    background: grey;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    /*não permite selecionar o texto ao dar dois cliques */
+  }
+  .input-box {
+    width: 450px;
+  }
+
+  .input-box h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  .input-box input {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #333;
+    margin: 15px 0 20px;
+    outline: none;
+    font-size: 24px;
+    padding: 0 20px;
+    letter-spacing: 2px;
+    box-shadow: -4px -4px 5px rgba(255, 255, 255, 1),
+      inset 4px 4px 5px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 10px rgba(255, 255, 255, 1),
+      4px 4px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .input-box input::placeholder {
+    letter-spacing: 0;
+  }
+
+  .input-box #btn {
+    position: relative;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+
+  .input-box #btn:active {
+    background: #9c27b0;
+  }
