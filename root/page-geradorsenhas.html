@@ -20,8 +20,15 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap.bundle.min.js "></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="popper.min.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <script src="index-gerador.js"></script>
+    <script src="armazenador.js"></script>
 </head>
 
 <body>
@@ -114,11 +121,53 @@
     <main>
         <section class="container">
             <div class="input-box">
-
                 <h2>Gerador de Senhas</h2>
                 <input type="text" placeholder="Gerar senha" id="password" readonly="">
                 <div id="btn" onclick="getPassword()">Gerar senha</div>
             </div>
+        </section>
+        <section class="container2">
+            <form id="login">
+                <div>
+                    <h2>Armazenador de Senhas</h2>
+                </div>
+                <div class="grid">
+                <div class="senha1">
+                    <label for="tiposenha1">Tipo</label>
+                    <input type="tipo" id="tiposenha1" name="tiposenha1" />
+
+                    <label for="senha1">Senha</label>
+                    <input type="senha" id="senha1" name="senha1" />
+                </div>
+                <div class="senha2">
+                    <label for="tiposenha2">Tipo</label>
+                    <input type="tipo" id="tiposenha2" name="tiposenha2" />
+
+                    <label for="senha2">Senha</label>
+                    <input type="senha" id="senha2" name="senha2" />
+                </div>
+                <div class="senha3">
+                    <label for="tiposenha3">Tipo</label>
+                    <input type="tipo" id="tiposenha3" name="tiposenha3" />
+
+                    <label for="senha3">Senha</label>
+                    <input type="senha" id="senha3" name="senha3" />
+                </div>
+                </div>
+                <div class="confirmar">
+                    <button type="button" class="btn btn-dark" id="entrar" onclick="login.onsubmit()">ENTRAR</button>
+                </div>
+                <div class="btn-group-vertical" id="alterar">
+                    <button type="button" class="btn btn-dark" id="apagarTudo" onclick="apagarTudo.onsubmit()">Limpar
+                        todos Dados</button>
+                    <button type="button" class="btn btn-dark" id="apagarPrimeiro"
+                        onclick="apagarPrimeiro.onsubmit()">Limpar Primeiro Campo</button>
+                    <button type="button" class="btn btn-dark" id="apagarSegundo"
+                        onclick="apagarSegundo.onsubmit()">Limpar Segundo Campo</button>
+                    <button type="button" class="btn btn-dark" id="apagarTerceiro"
+                        onclick="apagarTerceiro.onsubmit()">LImpar Terceiro Campo</button>
+                </div>
+            </form>
         </section>
     </main>
     <footer>
