@@ -103,7 +103,33 @@ footer{
     padding: 10px 15px;
     border-radius: 8px;
   }
-
+  .container > form{
+    justify-content: center;
+  }
+  label{
+    font-size: 2rem;
+  }
   .input-box #btn:active {
     background: #9c27b0;
+  }
+  .container2{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .container2 > div{
+    margin: 20px;
+  }
+  
+  .confirmar{
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .btn-group-vertical{
+    margin: 20px;
+  }
+  .btn-group-vertical > button{
+    margin: auto;
   }
