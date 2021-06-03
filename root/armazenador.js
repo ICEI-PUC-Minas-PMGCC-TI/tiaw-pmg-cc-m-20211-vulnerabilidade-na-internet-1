@@ -1,13 +1,11 @@
 window.onload = () => {
-  // carrega o ultimo identificador de usuário usado
   tiposenha1.value = localStorage.getItem('tiposenha1');
   tiposenha2.value = localStorage.getItem('tiposenha2');
   tiposenha3.value = localStorage.getItem('tiposenha3');
   senha1.value = localStorage.getItem('senha1');
   senha2.value = localStorage.getItem('senha2');
   senha3.value = localStorage.getItem('senha3');
-
-  // loga o usuário e registra o seu identificador
+ 
   login.onsubmit = (evento) => {
       localStorage.setItem('tiposenha1', tiposenha1.value);
       localStorage.setItem('senha1', senha1.value);
