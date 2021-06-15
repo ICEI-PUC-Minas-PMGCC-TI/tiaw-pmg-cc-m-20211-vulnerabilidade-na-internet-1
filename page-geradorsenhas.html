@@ -128,11 +128,84 @@
                 <div id="btn" onclick="getPassword()">Gerar senha</div>
             </div>
         </section>
+        <div class="coletaDados">
+            <div class="textoRaw">
+                <h1>Criptografar</h1>
+                <textarea name="1" id="0" cols="30" rows="10"></textarea>
+                <input type="button" value="Criptografar" onclick="Cript();">
+            </div>
+            <div class="criptografado">
+                <h1>Criptografado</h1>
+                <textarea name="2" id="1" cols="30" rows="10"></textarea>
+                <input type="button" value="limpar tudo" onclick="limpaTudo();">
+            </div>
+            <div class="descriptografado">
+                <h1>Descriptografado</h1>
+                <textarea name="3" id="2" cols="30" rows="10"></textarea>
+                <input type="button" value="Descriptografar" onclick="Descrip();">
+            </div>
+    
+        </div>
+
     </main>
     <footer>
         BLUM3D 2021 - Todos Direitos Reservados
     </footer>
     <h3></h3><!-- Start BawkBox Code--><script data-sil-id="60b5664e08a60f001e78b936">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/feedback/60b5664e08a60f001e78b936?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-feedback sil-widget" id="sil-widget-60b5664e08a60f001e78b936"><a href="//bawkbox.com/install/feedback"></a></div><!-- End BawkBox Code-->
+
+    <script>
+        function ASC(String) {
+            return String.charCodeAt(0);
+        }
+        function CHAR(Ascii) {
+            return String.fromCharCode(Ascii);
+        }
+        var chave = "98asd70as9dadasdasd0as98da90sdds9f0sf8"
+        function Cript() {
+           let dados  = document.getElementById('0').value;
+           let texto = "";
+           let len;
+           let p = 0;
+           let i;
+    
+            for(i = 0; i < dados.length; i++){
+                p++;
+                len = (ASC(dados.substr(i,1)) + (ASC(chave.substr(p,1))));
+                if(p == 50){
+                    p = 1;
+                }
+                if(len > 255) {
+                    len -= 256;
+                }
+                texto += (CHAR(len));
+            }
+            document.getElementById("1").value = texto;
+        }
+        function Descrip() {
+           let dados  = document.getElementById('1').value;
+           let texto = "";
+           let len;
+           let p = 0;
+           let i;
+            for(i = 0; i < dados.length; i++){
+                p++;
+                len = (ASC(dados.substr(i,1)) - (ASC(chave.substr(p,1))));
+                if(p == 50){
+                    p = 1;
+                }
+                if(len < 0) {
+                    len += 256;
+                }
+                texto += (CHAR(len));
+            }
+            document.getElementById("2").value = texto;
+        }
+        function limpaTudo(){
+            for(var i = 0; i < 3; i++){
+                document.getElementById(i).value = "";
+            }
+        }
+    </script>
 </body>
 
 </html>
