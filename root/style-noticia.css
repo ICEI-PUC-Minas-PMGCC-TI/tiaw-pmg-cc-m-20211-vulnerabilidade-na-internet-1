@@ -131,3 +131,8 @@ footer{
     background: grey;
     padding: 20px;
 }
+
+.fb-video{
+    max-width: 350px;
+    
+}
