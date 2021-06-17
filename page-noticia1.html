@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-noticia.css">
     <script src="https://kit.fontawesome.com/87af865d00.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -21,69 +21,126 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-    <style>
-        .feedback-disclaimer{
-       display: none;
-   }
-   .feedback-tooltip{
-       display: none;
-   }
-    </style>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#">Logo</a>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Quem Somos</a></li>
-                <li><a href="#">Gerador de Senhas</a></li>
-                <li><a href="page-noticia.html">Noticias</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Pesquisa</a></li>
-            </ul>
+    <div class="banner">
+        <div class="logo">
+            <svg style="width: 100px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 230">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                </defs>
+                <g id="Camada_2" data-name="Camada 2">
+                    <g id="Camada_1-2" data-name="Camada 1">
+                        <g id="forma">
+                            <polygon class="cls-1" points="56.5 59.5 121.5 18.5 70.5 12.5 56.5 59.5" />
+                            <polyline class="cls-1"
+                                points="121.5 18.5 92.86 90.13 56.5 59.5 36.5 105.5 92.5 90.5 94.5 158.5 121.5 18.5" />
+                            <polyline class="cls-1" points="70.5 12.5 40.5 30.5 56.5 59.5" />
+                            <polyline class="cls-1" points="40.5 30.5 35.5 106.5 93.5 162.5 82.5 122.5 92.5 90.5" />
+                            <line class="cls-1" x1="35.5" y1="106.5" x2="82.85" y2="123.69" />
+                        </g>
+                        <g id="letras">
+                            <polygon class="cls-1"
+                                points="6.5 173.5 23.5 173.5 25.5 178.12 25.47 209.5 6.5 209.5 6.5 173.5" />
+                            <polyline class="cls-1" points="6.5 210 6.5 223.5 25.5 223.5 25.5 212.31 22.52 209.96" />
+                            <polyline class="cls-1" points="32.5 173 32.5 220.74 34.5 223.5 51.5 223.5 51.5 217" />
+                            <polyline class="cls-1"
+                                points="59.5 174 59.5 217.35 63.6 223.5 75.28 223.5 79.5 217.62 79.5 174" />
+                            <polyline class="cls-1"
+                                points="115.5 217 115.5 223.5 134.5 223.5 134.5 173.5 115.5 173.5 115.5 180" />
+                            <line class="cls-1" x1="116" y1="188.5" x2="135" y2="188.5" />
+                            <polygon class="cls-1"
+                                points="143.5 173.5 143.5 223.5 158.5 223.53 161.5 216.53 161.5 179.5 158.19 173.5 143.5 173.5" />
+                            <polyline class="cls-1" points="88.5 223 88.5 173.5 89.5 173.5 96.5 208.5 98 208.5" />
+                            <line class="cls-1" x1="87" y1="222.5" x2="91" y2="222.5" />
+                            <polyline class="cls-1" points="106.5 223 106.5 173.5 105.5 173.5 98.5 208.5 98 208.5" />
+                            <line class="cls-1" x1="109" y1="222.5" x2="104" y2="222.5" />
+                        </g>
+                        <rect class="cls-1" x="0.5" y="0.5" width="165" height="229" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="banner-txt">
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid culpa exercitationem sit corrupti
+                nostrum voluptates modi ut. Maxime fugit laborum, laboriosam modi quas mollitia consectetur.</p>
+            <hr>
+            <h3>"Lorem ipsum"</h3>
+        </div>
+
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page-geradorsenhas.html">Gerador de Senhas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page-noticia.html">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page-login.html">Login</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="container">
-            <h1>Novidades</h1>
-            <div class="row">
-                <div class="col-8 col-sm-12 col-md-8 col-8">
-                    <div class="grid2">
-                        <div class="novidade1">
-                            <img src="./img/1.jpg" alt="">
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis id ligula
-                                eget semper.
-                                Donec porta sed felis vitae blandit. Fusce efficitur vel nibh at aliquam. Nunc a
-                                ipsum efficitur
-                                nibh efficitur blandit.</p>
-                        </div>
-                        <div class="novidade2">
-                            <img src="./img/2.jpg" alt="">
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis id ligula
-                                eget semper.
-                            </p>
-                        </div>
-                        <div class="novidade3">
-                            <img src="./img/3.jpg" alt="">
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis id ligula
-                                eget semper.
-                            </p>
-                        </div>
-                    </div>
+        <section>
+            <div class="grid2" id="tela">
+                 <div class="novidade1">
+                    <img src="./img/1.jpg" alt="">
+                    <span class="titulo">Lorem ipsum dolor sit amet.</span><br>
+                    <span class="creditos">15/06/2020 - BBCNews - Fulano </span><br>
+                    <span class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, obcaecati?
+                        <a href="#">Leia mais...</a>
+                    </span>
                 </div>
-                <div class="col-4 col-sm-8 col-md-4 col-lg-4">
-                    <div class="caixas">
-                        <div class="caixa1">
-                            <img src="./img/1.jpg" alt="">
-                        </div>
-                        <div class="caixa2">
-                            <img src="./img/2.jpg" alt="">
-                        </div>
-                    </div>
+                <div class="novidade1">
+                    <img src="./img/1.jpg" alt="">
+                    <span class="titulo">Lorem ipsum dolor sit amet.</span><br>
+                    <span class="creditos">15/06/2020 - BBCNews - Fulano </span><br>
+                    <span class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, obcaecati?
+                        <a href="#">Leia mais...</a>
+                    </span>
                 </div>
-
+                <div class="novidade1">
+                    <img src="./img/1.jpg" alt="">
+                    <span class="titulo">Lorem ipsum dolor sit amet.</span><br>
+                    <span class="creditos">15/06/2020 - BBCNews - Fulano </span><br>
+                    <span class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, obcaecati?
+                        <a href="#">Leia mais...</a>
+                    </span> 
+                </div>
+            </div>
         </section>
 
     </main>
@@ -91,7 +148,10 @@
         BLUM3D 2021 - Todos Direitos Reservados
     </footer>
     <script src="noticia.js"></script>
-    <h3></h3><!-- Start BawkBox Code--><script data-sil-id="60b5664e08a60f001e78b936">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/feedback/60b5664e08a60f001e78b936?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-feedback sil-widget" id="sil-widget-60b5664e08a60f001e78b936"><a href="//bawkbox.com/install/feedback"></a></div><!-- End BawkBox Code-->
+    <h3></h3><!-- Start BawkBox Code--><script data-sil-id="60b5664e08a60f001e78b936">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k];
+     e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/feedback/60b5664e08a60f001e78b936?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script>
+    <div class="sil-widget-feedback sil-widget" id="sil-widget-60b5664e08a60f001e78b936">
+        <a href="//bawkbox.com/install/feedback"></a></div><!-- End BawkBox Code--> 
 </body>
 
 </html>
