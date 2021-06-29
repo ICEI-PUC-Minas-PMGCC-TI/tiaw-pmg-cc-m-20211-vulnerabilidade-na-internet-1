@@ -168,7 +168,7 @@ header{
 }
 .titulo::after{
     content: '';
-    width: 30%;
+    width: 100px;
     height: 3px;
     margin: 0 auto;
     background-color: var(--color4);
@@ -242,7 +242,17 @@ header{
     background-color: var(--color4);
     width: 100%;
 }
+.oq-fazemos .titulo::after{
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: var(--color1);
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
 
+}
 .inner{
     max-width: 769px;
     margin: 0 auto;
@@ -272,6 +282,40 @@ header{
     text-align: center;
     margin-left: 5px;
 }
+
+.inner-btn{
+   text-align: center;
+   border:  1px solid var(--color1);
+   width: fit-content;
+   padding:  5px 10px;
+   margin: 0 auto;
+   margin-top: 10px;
+   transition: all .4s;
+}
+
+.inner-btn:hover{
+    background-color: var(--color1);
+    color: var(--color4);
+}
+
+.inner-btn a:hover{
+    background-color: var(--color1);
+    color: var(--color4);
+}
+
+
+
+
+/*RESPONSIVIDADE OQ FAZEMOS*/
+@media(max-width:768px){
+    .conteudo1,.conteudo2{
+        grid-template-columns: 1fr;
+    }
+    .conteudo2-txt,.conteudo1-txt{
+        grid-row: 2;
+        margin-top: 10px;
+    }
+}
 /*RESPONSIVIDADE EQUIPE*/
 @media(max-width:1024px){
     .equipe{
@@ -282,6 +326,7 @@ header{
     
     .membro{
         margin: 0 auto;
+        margin-bottom: 10px;
     }
 }
 
