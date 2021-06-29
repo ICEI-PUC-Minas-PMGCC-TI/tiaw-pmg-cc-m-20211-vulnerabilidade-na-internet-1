@@ -1,0 +1,74 @@
+PARTE JAVASCRIPT:
+    <script>
+        function ASC(String) {
+            return String.charCodeAt(0);
+        }
+        function CHAR(Ascii) {
+            return String.fromCharCode(Ascii);
+        }
+        var chave = "98asd70as9dadasdasd0as98da90sdds9f0sf8"
+        function Cript() {
+           let dados  = document.getElementById('0').value;
+           localStorage.setItem('rawText', dados);
+           let texto = "";
+           let len;
+           let p = 0;
+           let i;
+    
+            for(i = 0; i < dados.length; i++){
+                p++;
+                len = (ASC(dados.substr(i,1)) + (ASC(chave.substr(p,1))));
+                if(p == 50){
+                    p = 1;
+                }
+                if(len > 255) {
+                    len -= 256;
+                }
+                texto += (CHAR(len));
+            }
+            document.getElementById("1").value = texto;
+        }
+        function Descrip() {
+           let dados  = document.getElementById('1').value;
+           let texto = "";
+           let len;
+           let p = 0;
+           let i;
+            for(i = 0; i < dados.length; i++){
+                p++;
+                len = (ASC(dados.substr(i,1)) - (ASC(chave.substr(p,1))));
+                if(p == 50){
+                    p = 1;
+                }
+                if(len < 0) {
+                    len += 256;
+                }
+                texto += (CHAR(len));
+            }
+            document.getElementById("2").value = texto;
+        }
+        function limpaTudo(){
+            for(var i = 0; i < 3; i++){
+                document.getElementById(i).value = "";
+            }
+        }
+    </script>
+
+PARTE HTML:
+    <div class="coletaDados">
+            <div class="textoRaw">
+                <h1>Criptografar</h1>
+                <textarea name="1" id="0" cols="30" rows="10" ></textarea>
+                <input type="button" value="Criptografar" onclick="Cript();">
+            </div>
+            <div class="criptografado">
+                <h1>Criptografado</h1>
+                <textarea name="2" id="1" cols="30" rows="10"></textarea>
+                <input type="button" value="limpar tudo" onclick="limpaTudo();">
+            </div>
+            <div class="descriptografado">
+                <h1>Descriptografado</h1>
+                <textarea name="3" id="2" cols="30" rows="10"></textarea>
+                <input type="button" value="Descriptografar" onclick="Descrip();">
+            </div>
+    </div>
