@@ -1,0 +1,26 @@
+PARTE ESTILO:
+PAGINA DE NOTICIAS(ou outra se escolher)
+
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0" nonce="BWfz2P3n"></script>
+<div class="fb-page" data-href="https://www.facebook.com/Blum3d-100853292250542" data-tabs="timeline"
+ data-width="" data-height="" data-small-header="false" 
+data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+<blockquote cite="https://www.facebook.com/Blum3d-100853292250542"class="fb-xfbml-parse-ignore"><a 
+    href="https://www.facebook.com/Blum3d-100853292250542">Blum3d</a></blockquote></div>
+
+
+PAGINA HOME E TBM NOTICIA(ou outra se escolher)
+
+
+     <a href="https://www.instagram.com/">
+     <li><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></li>
+     </a>
+                        
+     <a href="https://twitter.com/">
+     <li><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></li>
+     </a>
+
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://ayltoninacio.com.br/blog/imagens-responsivas-dinamicas-com-sizes-e-srcset">
+    <li><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></li>
+    </a>
