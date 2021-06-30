@@ -1,0 +1,94 @@
+PARTE EM HTML:
+
+<div class="lado-esquerdo">
+            <img src="..." alt="LOGO">
+            <h2>Bem-vindo(a) de volta!</h2>
+            <div class="form">
+                <div class="col-md-6">
+                    <form id="login" action="https://postman-echo.com/post">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <button id="entrar" onclick="mudarHomePage()">ENTRAR</button>
+                <button id="criar">CRIAR CONTA</button><br><br>
+                <a href="">Esqueceu sua senha?</a>
+                </form>
+
+            </div>
+
+</div>
+
+
+PARTE EM CSS:
+
+/*LADO ESQUERDO!!*/
+.lado-esquerdo .form{
+    margin-top: 86px;
+}
+
+.lado-esquerdo{
+    padding: 40px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.lado-esquerdo h2{
+    margin-top: 40px;
+    color:  white;
+}
+.form-label{
+    color: white;
+}
+.lado-esquerdo #inputEmail4{
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    width: 27vw;
+    margin-bottom: 40px;
+    
+    
+}
+
+.lado-esquerdo #inputPassword4{
+    width: 100%;
+    background-color: gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    width: 27vw;
+    margin-bottom: 15px;
+}
+
+.lado-esquerdo button{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    margin-left: 40px;
+}
+
+
+.lado-esquerdo a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-left: 125px;
+    margin-bottom: 10px;
+}
+
+#entrar{
+    margin-bottom: 10px;
+}
+
+.lado-esquerdo a:hover{
+    color: black;
+    
+}   

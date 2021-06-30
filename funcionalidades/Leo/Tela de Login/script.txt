@@ -1,0 +1,38 @@
+
+PARTE DO SCRIPT:
+
+Script de localStorage para o login:
+Fica dentro do proprio html (head)
+
+
+
+<script>
+        window.onload = () => {
+            inputEmail4.value = localStorage.getItem('username');
+            inputPassword4.value = localStorage.getItem('password');
+
+            login.onsubmit = (evento) => {
+                localStorage.setItem('username', inputEmail4.value);
+                localStorage.setItem('password', inputPassword4.value);
+                alert(`Usuário ${inputEmail4.value} logado.`);
+                evento.preventDefault();
+            };
+        };
+    </script>
+
+
+
+
+Script para levar a pagina principal apos o login:
+Fica dentro do proprio html(head)
+
+
+
+ <script>
+        function mudarHomePage() {
+            setTimeout(function() {
+                window.location = "https://icei-puc-minas-pmgcc-ti.github.io/tiaw-pmg-cc-m-20211-vulnerabilidade-na-internet-1/index.html";
+            } , 5000);
+            
+        }
+    </script>

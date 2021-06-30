@@ -1,0 +1,71 @@
+
+PARTE EM HTML:
+
+<section class="container2">
+            <form id="login">
+                <div>
+                    <h2>Armazenador de Senhas</h2>
+                </div>
+                <div class="grid">
+                <div class="senha1">
+                    <label for="tiposenha1">Tipo</label>
+                    <input type="tipo" id="tiposenha1" name="tiposenha1" />
+
+                    <label for="senha1">Senha</label>
+                    <input type="senha" id="senha1" name="senha1" />
+                </div>
+                <div class="senha2">
+                    <label for="tiposenha2">Tipo</label>
+                    <input type="tipo" id="tiposenha2" name="tiposenha2" />
+
+                    <label for="senha2">Senha</label>
+                    <input type="senha" id="senha2" name="senha2" />
+                </div>
+                <div class="senha3">
+                    <label for="tiposenha3">Tipo</label>
+                    <input type="tipo" id="tiposenha3" name="tiposenha3" />
+
+                    <label for="senha3">Senha</label>
+                    <input type="senha" id="senha3" name="senha3" />
+                </div>
+                </div>
+                <div class="confirmar">
+                    <button type="button" class="btn btn-dark" id="entrar" onclick="login.onsubmit()">ENTRAR</button>
+                </div>
+                <div class="btn-group-vertical" id="alterar">
+                    <button type="button" class="btn btn-dark" id="apagarTudo" onclick="apagarTudo.onsubmit()">Limpar
+                        todos Dados</button>
+                    <button type="button" class="btn btn-dark" id="apagarPrimeiro"
+                        onclick="apagarPrimeiro.onsubmit()">Limpar Primeiro Campo</button>
+                    <button type="button" class="btn btn-dark" id="apagarSegundo"
+                        onclick="apagarSegundo.onsubmit()">Limpar Segundo Campo</button>
+                    <button type="button" class="btn btn-dark" id="apagarTerceiro"
+                        onclick="apagarTerceiro.onsubmit()">LImpar Terceiro Campo</button>
+                </div>
+        </form>
+</section>
+
+
+PARTE DO STYLE:
+
+.container2{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+.container2 > div{
+    margin: 20px;
+  }
+  
+.confirmar{
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+.btn-group-vertical{
+    margin: 20px;
+  }
+.btn-group-vertical > button{
+    margin: auto;
+  }
