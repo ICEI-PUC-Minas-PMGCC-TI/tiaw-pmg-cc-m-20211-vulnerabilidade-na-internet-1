@@ -141,7 +141,7 @@ header{
     display:  block;
     padding: .5rem;
     text-transform: uppercase;
-    
+    text-decoration: none;
     color: var(--color1);
     transition: .3s;
     -webkit-transition: .3s;
@@ -181,6 +181,7 @@ header{
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    color: #fff;
 }
 
 /*EQUIPE*/
@@ -191,6 +192,8 @@ header{
     grid-template-rows: 5% 95%;
     gap: 20px;
     padding: 5px;
+    
+
 }
 
 .equipe img{
@@ -225,6 +228,9 @@ header{
 .equipe-txt{
     grid-column: 2;
     margin-top: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 40px;
 }
 
 .redes-sociais li{
@@ -281,6 +287,8 @@ header{
     align-self: center;
     text-align: center;
     margin-left: 5px;
+    font-size: 1.2rem;
+    line-height: 30px;
 }
 
 .inner-btn{
@@ -307,6 +315,7 @@ header{
 
 .parte-final{
     margin-top: 15px;
+    color: #fff;
 }
 
  .logo-parte-final{
@@ -320,6 +329,7 @@ header{
 
 /*FOOTER*/
     footer{
+        margin-top: 60px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
