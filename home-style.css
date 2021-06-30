@@ -318,7 +318,27 @@ header{
     margin: 0 auto;
 }
 
-
+/*FOOTER*/
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: url("./img/daniel-monteiro-DPe7jm0HEzY-unsplash.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .texto-footer{
+        margin: 0 auto;
+        background-color: hsl(0, 0%, 0%,50%);
+        color: #fff;
+        text-align: center;
+    }
+    .direitos{
+        background-color: var(--color4);
+        width: 100%;
+        font-weight: bolder;
+        height: 100%;
+        padding: 10px;
+    }
 
 /*RESPONSIVIDADE OQ FAZEMOS*/
 @media(max-width:768px){
