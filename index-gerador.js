@@ -8,4 +8,4 @@
         password += letras.charAt(Math.floor(Math.random() * 57));
     }
     document.getElementById('password').value = password
-  }
+}
