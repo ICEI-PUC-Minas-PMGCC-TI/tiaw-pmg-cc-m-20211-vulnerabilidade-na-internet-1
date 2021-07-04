@@ -199,10 +199,6 @@ header{
     color: #ff971e;
 }
 
-
-
-
-
 /*ARMAZENADOR DE SENHAS*/
 .container2{
     display: flex;
@@ -246,10 +242,29 @@ label{
     outline: none;
 }
 
+/*CRIPTOGRAFIA*/
+.coletaDados{
+    display: flex;
+    flex-direction: row;
+}
 
+.textoRaw, .criptografado, .descriptografado{
+    display: grid;
+    grid-template-rows:  1fr;
+    margin: 0 auto;
+}
 
+.coletaDados input{
+    background-color: transparent;
+    border:  1px solid var(--color4);
+    color: #fff;
+    outline: none;
+}
 
-
+.coletaDados input:hover{
+    background-color: var(--color1);
+    color: #ff971e;
+}
 
 
 
