@@ -4,15 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faça Login | BLUM3D</title>
-    <meta name="description" content="login, criar conta, blum3d">
-    <meta name="keywords" content="login, conta">
-    <meta name="author" content="Gabriel Svizzero">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="style-login.css">
-    <style type="text/css">
+    <title>Home | Blumed</title>
+    <meta name="description" content="Blumed">
+    <meta name="keywords" content="Blumed">
+    <meta name="author" content="Breno Lopes">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  <!--FONTS GOOGLE-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Geo&family=Poppins&family=Wire+One&display=swap');
     </style>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="style-login.css">
     <script>
         window.onload = () => {
             inputEmail4.value = localStorage.getItem('username');
@@ -42,8 +53,8 @@
     <main>
         <!--Form-->
         <div class="lado-esquerdo">
-            <img src="..." alt="LOGO">
-            <h2>Bem-vindo(a) de volta!</h2>
+            <div class="logo"><svg style="width: 100px;"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 230"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><g id="Camada_2" data-name="Camada 2"><g id="Camada_1-2" data-name="Camada 1"><g id="forma"><polygon class="cls-1" points="56.5 59.5 121.5 18.5 70.5 12.5 56.5 59.5"/><polyline class="cls-1" points="121.5 18.5 92.86 90.13 56.5 59.5 36.5 105.5 92.5 90.5 94.5 158.5 121.5 18.5"/><polyline class="cls-1" points="70.5 12.5 40.5 30.5 56.5 59.5"/><polyline class="cls-1" points="40.5 30.5 35.5 106.5 93.5 162.5 82.5 122.5 92.5 90.5"/><line class="cls-1" x1="35.5" y1="106.5" x2="82.85" y2="123.69"/></g><g id="letras"><polygon class="cls-1" points="6.5 173.5 23.5 173.5 25.5 178.12 25.47 209.5 6.5 209.5 6.5 173.5"/><polyline class="cls-1" points="6.5 210 6.5 223.5 25.5 223.5 25.5 212.31 22.52 209.96"/><polyline class="cls-1" points="32.5 173 32.5 220.74 34.5 223.5 51.5 223.5 51.5 217"/><polyline class="cls-1" points="59.5 174 59.5 217.35 63.6 223.5 75.28 223.5 79.5 217.62 79.5 174"/><polyline class="cls-1" points="115.5 217 115.5 223.5 134.5 223.5 134.5 173.5 115.5 173.5 115.5 180"/><line class="cls-1" x1="116" y1="188.5" x2="135" y2="188.5"/><polygon class="cls-1" points="143.5 173.5 143.5 223.5 158.5 223.53 161.5 216.53 161.5 179.5 158.19 173.5 143.5 173.5"/><polyline class="cls-1" points="88.5 223 88.5 173.5 89.5 173.5 96.5 208.5 98 208.5"/><line class="cls-1" x1="87" y1="222.5" x2="91" y2="222.5"/><polyline class="cls-1" points="106.5 223 106.5 173.5 105.5 173.5 98.5 208.5 98 208.5"/><line class="cls-1" x1="109" y1="222.5" x2="104" y2="222.5"/></g><rect class="cls-1" x="0.5" y="0.5" width="165" height="229"/></g></g></svg></div>
+           
             <div class="form">
                 <div class="col-md-6">
                     <form id="login" action="https://postman-echo.com/post">
@@ -58,7 +69,6 @@
                 <button id="criar">CRIAR CONTA</button><br><br>
                 <a href="">Esqueceu sua senha?</a>
                 </form>
-
             </div>
 
         </div>
@@ -78,22 +88,22 @@
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="./img/3.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Segurança</h5>
+                            <p>Uma empresa que preocupa com a segurança de todos.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="./img/1.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5>Informação</h5>
+                            <p>Nós nos preocupamos em trazer a informação mais atualizada pra você.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./img/2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h5>Confiabilidade</h5>
+                            <p>A nossa prioridade é passar o máximo de confiança para os nossos usuários.</p>
                         </div>
                     </div>
                 </div>

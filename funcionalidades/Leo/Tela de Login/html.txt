@@ -52,8 +52,6 @@ PARTE EM CSS:
     border-radius: 0px;
     width: 27vw;
     margin-bottom: 40px;
-    
-    
 }
 
 .lado-esquerdo #inputPassword4{
@@ -75,7 +73,6 @@ PARTE EM CSS:
     margin-left: 40px;
 }
 
-
 .lado-esquerdo a{
     text-decoration: none;
     color: white;
@@ -90,5 +87,4 @@ PARTE EM CSS:
 
 .lado-esquerdo a:hover{
     color: black;
-    
-}   
+}
