@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Blumed</title>
+    <meta name="description" content="Blumed">
+    <meta name="keywords" content="Blumed">
+    <meta name="author" content="Breno Lopes">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  <!--FONTS GOOGLE-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Geo&family=Poppins&family=Wire+One&display=swap');
+    </style>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" href="noticia.css">
+    <script src="https://kit.fontawesome.com/970266a465.js" crossorigin="anonymous"></script>
+    <style>
+      .feedback-disclaimer{
+       display: none;
+     }
+    .feedback-tooltip{
+       display: none;
+     }
+    </style>
+
+</head>
+
+    <body>
+        <div class="banner">
+            <div class="teste">
+              <div class="logo">
+                <svg style="width: 100px;"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 230"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><g id="Camada_2" data-name="Camada 2"><g id="Camada_1-2" data-name="Camada 1"><g id="forma"><polygon class="cls-1" points="56.5 59.5 121.5 18.5 70.5 12.5 56.5 59.5"/><polyline class="cls-1" points="121.5 18.5 92.86 90.13 56.5 59.5 36.5 105.5 92.5 90.5 94.5 158.5 121.5 18.5"/><polyline class="cls-1" points="70.5 12.5 40.5 30.5 56.5 59.5"/><polyline class="cls-1" points="40.5 30.5 35.5 106.5 93.5 162.5 82.5 122.5 92.5 90.5"/><line class="cls-1" x1="35.5" y1="106.5" x2="82.85" y2="123.69"/></g><g id="letras"><polygon class="cls-1" points="6.5 173.5 23.5 173.5 25.5 178.12 25.47 209.5 6.5 209.5 6.5 173.5"/><polyline class="cls-1" points="6.5 210 6.5 223.5 25.5 223.5 25.5 212.31 22.52 209.96"/><polyline class="cls-1" points="32.5 173 32.5 220.74 34.5 223.5 51.5 223.5 51.5 217"/><polyline class="cls-1" points="59.5 174 59.5 217.35 63.6 223.5 75.28 223.5 79.5 217.62 79.5 174"/><polyline class="cls-1" points="115.5 217 115.5 223.5 134.5 223.5 134.5 173.5 115.5 173.5 115.5 180"/><line class="cls-1" x1="116" y1="188.5" x2="135" y2="188.5"/><polygon class="cls-1" points="143.5 173.5 143.5 223.5 158.5 223.53 161.5 216.53 161.5 179.5 158.19 173.5 143.5 173.5"/><polyline class="cls-1" points="88.5 223 88.5 173.5 89.5 173.5 96.5 208.5 98 208.5"/><line class="cls-1" x1="87" y1="222.5" x2="91" y2="222.5"/><polyline class="cls-1" points="106.5 223 106.5 173.5 105.5 173.5 98.5 208.5 98 208.5"/><line class="cls-1" x1="109" y1="222.5" x2="104" y2="222.5"/></g><rect class="cls-1" x="0.5" y="0.5" width="165" height="229"/></g></g></svg>
+            </div>
+            <div class="banner-txt">
+                <p>Não devemos pedir aos nossos clientes que façam um equilibrio entre privacidade e segurança. Precisamos oferecer-lhes o melhor de ambos. Em última análise, proteger os dados de outra pessoa é proteger a todos nós.</p>
+                <h3>"Tim Cook"</h3>
+            </div>
+            </div>
+        </div>
+        <header class="header" id="header">
+          <nav class="nav" id="nav">
+              <button id="btn-mobile">
+                  <span id="icone"></span>
+              </button>
+              <ul class="menu" id="menu">
+                  <li class="nav-item"><a href="index.html">QUEM SOMOS</a></li>
+                  <li class="nav-item"><a href="gerador.html">GERADOR DE SENHAS</a></li>
+                  <li class="nav-item"><a href="noticia.html">NOTÍCIAS</a></li>
+                  <li class="nav-item"><a href="page-contato.html">CONTATO</a></li>
+                  <li class="nav-item"><a href="page-login.html">LOGIN</a></li>
+              </ul>
+          </nav>
+        </header>
+        <section class="display-noticias">
+
+          <div class="noticia" id="noticia1">
+            <div class="img-noticia"><img src="./img/noticia1.jpg" alt=""></div>
+            <article class="texto-noticia">
+              <h3 class="titulo-noticia">Vazamento de dados de aposentados do INSS vai parar na Justiça</h3>
+              <p class="sinopse">O vazamento de dados de aposentados e pensionistas do Instituto Nacional do Seguro Social foi parar na Justiça Federal...</p>
+              <a href="https://extra.globo.com/economia/vazamento-de-dados-de-aposentados-do-inss-vai-parar-na-justica-25080852.html" class="link-noticia" target="_blank">Veja a notícia</a>
+            </article>
+          </div>
+
+          <div class="noticia" id="noticia2">
+            <div class="img-noticia"><img src="./img/noticia2.jpg" alt=""></div>
+            <article class="texto-noticia">
+              <h3 class="titulo-noticia">75% das empresas já tiveram dados vazados; veja como descobrir</h3>
+              <p class="sinopse">Vazamentos de dados atingem empresas
+                Três em cada quatro empresas já tiveram seus dados vazados na internet, de acordo com um levantamento realizado pela PSafe, unidade de cibersegurança do grupo CyberLabs...</p>
+              <a href="https://www.pontaporainforma.com.br/75-das-empresas-ja-tiveram-dados-vazados-veja-como-descobrir/" class="link-noticia" target="_blank">Veja a notícia</a>
+            </article>
+          </div>
+
+          <div class="noticia" id="noticia3">
+            <div class="img-noticia"><img src="./img/noticia3.jpeg" alt=""></div>
+            <article class="texto-noticia">
+              <h3 class="titulo-noticia">Novo vazamento expõe dados de 700 mi de usuários do LinkedIn, diz site</h3>
+              <p class="sinopse">Entidades de defesa dos consumidores pedem que bancos provem não existirem falhas na segurança dos aplicativos das instituições para que, assim, não sejam obrigados a ressarcirem vítimas de golpes...</p>
+              <a href="https://www.poder360.com.br/tecnologia/novo-vazamento-expoe-dados-de-700-mi-de-usuarios-do-linkedin-diz-site/" class="link-noticia" target="_blank">Veja a notícia</a>
+            </article>
+          </div>
+
+          <div class="noticia" id="noticia4">
+            <div class="img-noticia"><img src="./img/noticia4.jpg" alt=""></div>
+            <article class="texto-noticia">
+              <h3 class="titulo-noticia">Vazamento expõe 8,4 bilhões de senhas e pode ser o maior da história</h3>
+              <p class="sinopse">O LinkedIn é alvo de nova denúncia de vazamento de dados dos seus usuários. Segundo site especializado, informações de 700 milhões de membros da rede social de negócios foram roubadas por hackers...</p>
+              <a href="https://www.uol.com.br/tilt/noticias/redacao/2021/06/08/rockyou2021-maior-vazamento-da-historia-expoe-84-bilhoes-de-senhas.htm" class="link-noticia" target="_blank">Veja a notícia</a>
+            </article>
+          </div>
+
+          <div class="noticia" id="noticia5">
+            <div class="img-noticia"><img src="./img/noticia5.jpg" alt=""></div>
+            <article class="texto-noticia">
+              <h3 class="titulo-noticia">Por novo golpe, Procon-SP pede que bancos provem segurança de aplicativos</h3>
+              <p class="sinopse">Mais de 8,4 bilhões de senhas podem estar circulando na internet neste exato momento. Ao que tudo indica, um arquivo de texto de 100 GB foi compartilhado em um fórum de hackers....</p>
+              <a href="https://vejasp.abril.com.br/cidades/por-novo-golpe-procon-sp-pede-que-bancos-provem-seguranca-de-aplicativos/" class="link-noticia" target="_blank">Veja a notícia</a>
+            </article>
+          </div>
+
+        </section>
+
+
+        <footer>
+              <div class="texto-footer col-lg-4">
+                <h3 class="titulo">Nossa História</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quia odit, qui est ea fugiat temporibus alias molestias excepturi quasi beatae pariatur tempora tenetur soluta numquam! Dolore soluta architecto cum!</p>
+              </div>
+              <div class="texto-footer col-lg-4">
+                <h3 class="titulo">Contato</h3>
+                <ul class="contato-footer">
+                  <li>31 9999-999</li>
+                  <li>Belo Horizonte - MG</li>
+                  <li>XXXXX@XXX.COM</li>
+                </ul>
+              </div>
+              <div class="texto-footer col-lg-4">
+                <h3 class="titulo">Redes Sociais</h3>
+                <ul class="redes-sociais-footer">
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </div>
+          <div class="direitos">Todos os direitos reservados BLUM3D - 2021</div>
+        </footer>
+
+
+
+
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <h3></h3><!-- Start BawkBox Code--><script data-sil-id="60b5664e08a60f001e78b936">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/feedback/60b5664e08a60f001e78b936?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-feedback sil-widget" id="sil-widget-60b5664e08a60f001e78b936"><a href="//bawkbox.com/install/feedback"></a></div><!-- End BawkBox Code-->
+    </body>
+
+</html>
