@@ -5,8 +5,8 @@ function exibeNoticias(){
     let texto = '';
     let dados = JSON.parse (this.responseText);
     for(i=0; i < 5; i++){
+        console.log(dados)
         let noticia = dados.articles[i];
-        let data = noticia.publishedAt;
         texto = texto + `
             <div class="novidade1">
                 <img src="${noticia.urlToImage}" alt="">
